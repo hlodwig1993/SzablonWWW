@@ -1,0 +1,59 @@
+ol
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 18px;
+	line-height: 200%;
+	display: inline-block;
+}
+
+ol > li
+{
+	padding: 9px 0 0 0;
+	float: left;
+	width: 150px;
+	height: 44px;
+	text-align: center;
+}
+
+ol a
+{
+	color: grey;
+	text-decoration: none;
+	display: block;
+}
+
+ol > li:hover
+{
+	background-color: #1ABDC7;
+}
+
+#wyloguj
+{	
+	float: right;
+	text-align: center;
+	color: grey;
+	padding: 14px 15px 0 0;
+	font-size:18px;
+}
+#wyloguj:hover
+{	
+	float: right;
+	text-align: center;
+	color: black;
+	padding: 9px 15px 0 0;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+#about
+{
+	width: 900px;
+	height: 640px;
+	margin-right:auto;
+	margin-left:auto;
+	background: #E4E4E4;
+	text-align:justify;
+	
+}
