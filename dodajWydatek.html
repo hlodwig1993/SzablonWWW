@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Personal Budget</title>
+	<meta name="description" content="Aplikacja do kontroli domowego budżetu" />
+	<meta name="keywords" content="finanse, oszczednosci , domowy budzet, kontrola" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="menuGlowne.css" type="text/css" />
+	<link rel="stylesheet" href="dodajWydatek.css" type="text/css" />
+	<link href="css/dolar.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	
+	<script src="date.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="top">
+			<div id ="logo">
+				<i class="icon-calculator"  style="float: left;"></i>
+				<span style="color: #c34f4f">Personal</span> Budget
+				<div style="clear:both;"></div>
+			</div>
+			<div id="menu" style="float: left;">
+				<ol>
+					<li><a href="#">Dodaj przychód</a></li>
+					<li><a href="#">Dodaj wydatek</a>
+					<li><a href="#">Przeglądaj bilans</a>
+					<li><a href="#">Ustawienia</a>
+				</ol>
+			</div>
+			<div id="wyloguj">
+				Wyloguj sie
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div style="clear:both;"></div>
+		<div id="about1">
+			<div class="row">
+					<label> Kwota: <input type="number" name="przychod" step="0.01"></label>
+			</div>
+			<div class="data">
+			Data :
+			<script>
+					document.write(new Date(document.lastModified).date('Y-m-d'));
+			</script>
+			</div>
+			<div class="row">
+				
+					<label for="platnosc">Sposób płatności</label>
+					<select id="platnosc" name="platnosc">
+					
+						<option value="g"> Gotówka</option>
+						<option value="d" >Karta debetowa</option>
+						<option value="k">Karta kredytowa</option>
+					
+					</select>
+				
+				</div>
+				
+			<div class="row">
+				
+					<label for="kategoria">Kategoria</label>
+					<select id="kategoria" name="kategoria">
+					
+						<option value="j">Jedzenie</option>
+						<option value="tr" >Transport</option>
+						<option value="m">Mieszkanie</option>
+						<option value="t">Telekomunikacja</option>
+						<option value="o">Opieka zdrowotna</option>
+						<option value="u"> Ubranie</option>
+						<option value="d">Dzieci</option>
+						<option value="r">Rozrywka</option>
+						<option value="i">Inne wydatki</option>
+					
+					</select>
+				
+				</div>
+				<div class="row">
+				<label> Komentarz <input type="text" name="komentarz"></label>
+				</div>
+				
+				<div class="row">
+					<input type="submit" value="Dodaj">
+					<input type="button" value="Anuluj">
+				</div>
+		</div>
+		
+		<footer>
+				<div id="footerL">
+				&copy Personal Budget| Korzystanie z serwisu oznacza akceptację regulaminu i polityki prywatności.
+				</div>
+			</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+#about1
+{
+	width:820px;
+	height: 570px;
+	margin-top: 30px;
+	margin-left:auto;
+	margin-right:auto;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	
+}
+ol > li > ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	display: none;
+}
+ol > li:hover > ul
+{
+	display: block;
+}
+
+ol > li > ul > li
+{
+	background-color:#1ABDC7;
+	position: relative;
+	z-index: 100;
+	border-top: 1px dashed #751b1b;
+}
+
+ol > li > ul > li:hover
+{
+	background-color: #09ACB6;
+}
+.row
+{
+	margin: 20px 10px;
+}
+
+.data
+{
+	margin: 20px 10px;
+}
